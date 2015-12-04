@@ -1,286 +1,47 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link href='https://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'>
-    <style>
-      body {
-        font-family: 'Nunito', sans-serif;
-        width: 100%;
-        padding:0;
-        margin:0;
-      }
-      p, span {
-        color: #0D2F62;
-        text-align: center;
-      }
-
-      div.welcomeBox {
-        text-align: center;
-      }
-
-      .welcome {
-        font-weight: 100;
-        font-size: 140px;
-      }
-
-      .message {
-        font-weight: 500;
-        font-size: 28px;
-      }
-
-      .info {
-        font-weight: 100;
-        font-size: 21px;
-      }
-
-      .promotion {
-        font-weight: 500;
-        font-size: 21px;
-      }
-
-      .beverageBucks {
-
-        background-color: #0160A4;
-        float: left;
-        width:100%;
-        margin-right:20px;
-      }
-
-      .bevBucksImage {
-        float: left;
-        padding-left: 15px;
-        padding-right: 15px;
-        margin-right: 20px;
-        display: inline;
-        width: 60%;
-        max-width: 411px;
-        border-right: 2px dotted white;
-      }
-
-      .bevBucksMainText {
-        border-top: 2px dotted white;
-        display: inline;
-        width: 30%;
-        float: left;
-        color: white;
-        padding-top: 10px;
-        font-size: 15px;
-      }
-
-      .bevBucksTextHeader {
-        color: white;
-        font-weight: 300;
-        font-size: 20px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-      }
-
-      .bottle {
-        width: 15%;
-      }
-
-      .left {
-        width: 85%;
-        float: left;
-      }
-
-      .right {
-        right:0;
-        top:140px;
-        position:absolute;
-        text-align:right;
-        margin:0;
-        padding:0;
-      }
-
-      .right img {
-        width:136px;
-        padding:0;
-        margin:0;
-      }
-      .signature {
-        font-size: 23px;
-        font-weight: 500;
-        margin-bottom: 0;
-      }
-
-      .from {
-        font-size: 20px;
-        font-weight: 100;
-        margin-top: 0;
-      }
-
-      #dvBevFooter {
-        color: #0D2F62;
-        font-size: 21px;
-        background-color: #fff;
-        padding:10px;
-        padding-left:20px;
-      }
-
-      #dvBevFooter a {
-        text-decoration: none;
-        color: #0D2F62;
-      }
-
-      @media all and (max-width: 849px){
-        .welcome {
-          font-size: 60px;
-        }
-
-        .bottle {
-          display: none;
-        }
-      }
-         /*==========  Non-Mobile First Method  ==========*/
-
-         /* Large Devices, Wide Screens
-         @media screen and (max-width : 1200px) {
-            body {background-color: red;}
-         }
-
-          Medium Devices, Desktops
-         @media screen and (max-width : 992px) {
-            body {background-color: orange;}
-         } */
-
-         /* Small Devices, Tablets */
-         @media screen and (max-width : 768px) {
-           /*body {background-color: yellow;}*/
-           .left {
-             padding-left: 40px;
-           }
-
-           .beverageBucks {
-             width: 100%;
-             text-align:center;
-           }
-
-           .bevBucksImage {
-             float: none;
-             display: inline-block;
-
-             border-right: none;
-             width: 411px;
-             margin-left: auto;
-             margin-right: auto;
-             padding-top: 15px;
-           }
-
-           .bevBucksImage img {
-             width: 100%;
-           }
-
-           .bevBucksText {
-             display:block;
-             padding: 15px;
-           }
-
-           .bevBucksTextHeader, .bevBucksText,
-           .bevBucksMainText {
-             text-align: justify;
-             width: calc(100% - 15px);
-             padding-bottom: 15px;
-           }
-
-           .right img {
-               display:none;
-           }
-         }
-
-         /* Extra Small Devices, Phones */
-         @media screen and (max-width : 480px) {
-            /*body {background-color: green;}*/
-            .left {
-              padding-left: 35px;
-            }
-
-            .beverageBucks {
-              width: 100%;
-            }
-
-            .bevBucksImage {
-              float: none;
-              display: inline-block;
-              width: 100%;
-              border-right: none;
-              margin:0;
-              padding:0;
-            }
-
-            .bevBucksImage img {
-              width: 100%;
-              margin:0;
-              margin-top:15px;
-            }
-
-            .bevBucksText {
-              display: block;
-              padding: 15px;
-            }
-
-            .bevBucksTextHeader, .bevBucksText,
-            .bevBucksMainText {
-              text-align: justify;
-              width: calc(100% - 15px);
-              padding-bottom: 15px;
-            }
-
-            .right img {
-                display:none;
-            }
-         }
-
-         /* Custom, iPhone Retina */
-         @media screen and (max-width : 320px) {
-            /*body {background-color: blue;}*/
-            .bevBucksText {
-              display:block;
-            }
-            .right img {
-              display:none;
-            }
-         }
-    </style>
   </head>
-  <body>
-    <div class="left">
-      <div class="welcomeBox"><span class="welcome">Welcome!</span><img class="logo" src="images/bu_logo.png" /></div>
-      <p class="message">You're now registered to receive future promotions,<br/>
+  <body style="font-family: 'Nunito', sans-serif;width: 100%;padding:0;margin:0;">
+    <div class="left" style="width: 85%;float: left;">
+      <div class="welcomeBox" style="text-align: center;"><span class="welcome" style="color: #0D2F62;text-align: center;font-weight: 100;font-size: 140px;">Welcome!</span><img class="logo" src="images/bu_logo.png" /></div>
+      <p class="message" style="color: #0D2F62;text-align: center;font-weight: 500;font-size: 28px;">You're now registered to receive future promotions,<br/>
         exclusive offers and new product release information!
       </p>
-      <p class="info">At Beverage Universe, you'll love our selection of
+      <p class="info" style="color: #0D2F62;text-align: center;font-weight: 100;font-size: 21px;">At Beverage Universe, you'll love our selection of
         bottled waters, sparkling beverages, popular and hard-to-find
         sodas, juices, energy drinks, sports drinks and so much more. Buy
         the drinks you want online and save time, money and hassle <br/> have them
         delivered wherever you are, whenever you need them.
       </p>
-      <p class="info">Our Beverage Experts are ready to answer any question you may <br/> have,
-      you can reach us at: <a href="mailto://info@beverageuniverse.com">info@beverageuniverse.com</a> or call us at
+      <p class="info" style="color: #0D2F62;text-align: center;font-weight: 100;font-size: 21px;">Our Beverage Experts are ready to answer any question you may <br/> have,
+      you can reach us at: <a href="mailto://info@beverageuniverse.com" style="color: #0D2F62;text-decoration: none;">info@beverageuniverse.com</a> or call us at
       1-888-738-3003 between 7 AM and 5 PM EST weekdays.</p>
-      <p class="promotion">
-        25 Beverage Bucks have been added to your account. <br/> You can use them
+      <p class="promotion" style="color: #0D2F62;text-align: center;font-weight: 500;font-size: 21px;">
+        25 Beverage Bucks have been added to your account.<br/> You can use them
         for your order of $100 or more.*
       </p>
-      <p class="signature">
+      <p class="signature" style="color: #0D2F62;text-align: center;font-size: 23px;font-weight: 500;margin-bottom: 0;">
         Happy Drink Shopping!
       </p>
-      <p class="from">
+      <p class="from" style="color: #0D2F62;text-align: center;font-size: 20px;font-weight: 100;margin-top: 0;">
         <i>The Beverage Universe Team</i>
       </p>
     </div>
-    <span class="right">
-      <img class="bottle" src="images/bu_bottle.png" />
+    <span class="right" style="color: #0D2F62;text-align: center;right:0;top:140px;position:absolute;text-align:right;margin:0;padding:0;">
+      <img class="bottle" src="images/bu_bottle.png" style="width: 15%;width:136px;padding:0;margin:0;" />
     </span>
-    <div class="beverageBucks">
-      <div class="bevBucksImage">
+    <div class="beverageBucks" style="background-color: #0160A4;float: left;width:100%;margin-right:20px;">
+      <div class="bevBucksImage" style="float: left;padding-left: 15px;padding-right: 15px;margin-right: 20px;display: inline;width: 60%;max-width: 411px;border-right: 2px dotted white;">
         <img src="images/bu_bevbucks.jpg" />
       </div>
       <div class="bevBucksText">
-        <div class="bevBucksTextHeader">
+        <div class="bevBucksTextHeader" style="color: white;font-weight: 300;font-size: 20px;padding-top: 10px;padding-bottom: 10px;">
           25 Beverage Bucks Expire in 7 Days
         </div>
-        <div class="bevBucksMainText">
+        <div class="bevBucksMainText" style="border-top: 2px dotted white;display: inline;width: 30%;float: left;color: white;padding-top: 10px;font-size: 15px;">
           * BEVERAGE BUCKS of $25 have been added to your new account.
           Qualifying purchases are based on value of items purchased.
           Minimum order of $100 does not include sales tax, bottle deposit
@@ -289,10 +50,8 @@
         </div>
       </div>
     </div>
-    <div id="dvBevFooter" style="clear:both;">
-        Find your beverages at <a id="lnkBevFooter" href="http://www.beverageuniverse.com" target="_blank">www.beverageuniverse.com</a>
+    <div id="dvBevFooter" style="clear:both;color: #0D2F62;font-size: 21px;background-color: #fff;padding:10px;padding-left:20px;">
+        Find your beverages at <a id="lnkBevFooter" href="http://www.beverageuniverse.com" target="_blank" style="color: #0D2F62;text-decoration: none;">www.beverageuniverse.com</a>
     </div>
-
-
   </body>
 </html>
