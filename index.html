@@ -4,16 +4,14 @@
     <link href='https://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'>
     <style>
       body {
+        font-family: 'Nunito', sans-serif;
         width: 100%;
+        padding:0;
+        margin:0;
       }
       p, span {
         color: #0D2F62;
-        font-family: 'Nunito', sans-serif;
         text-align: center;
-      }
-      
-      div {
-        font-family: 'Nunito', sans-serif;
       }
 
       div.welcomeBox {
@@ -41,23 +39,26 @@
       }
 
       .beverageBucks {
+
         background-color: #0160A4;
         float: left;
         width:100%;
         margin-right:20px;
-        max-height: 198px;
       }
 
       .bevBucksImage {
         float: left;
+        padding-left: 15px;
+        padding-right: 15px;
         margin-right: 20px;
         display: inline;
-        width:60%;
+        width: 60%;
         max-width: 411px;
         border-right: 2px dotted white;
       }
 
       .bevBucksMainText {
+        border-top: 2px dotted white;
         display: inline;
         width: 30%;
         float: left;
@@ -70,8 +71,8 @@
         color: white;
         font-weight: 300;
         font-size: 20px;
+        padding-top: 10px;
         padding-bottom: 10px;
-        border-bottom: 2px dotted white;
       }
 
       .bottle {
@@ -85,7 +86,7 @@
 
       .right {
         right:0;
-        top:5;
+        top:140px;
         position:absolute;
         text-align:right;
         margin:0;
@@ -93,7 +94,7 @@
       }
 
       .right img {
-        width:163px;
+        width:136px;
         padding:0;
         margin:0;
       }
@@ -109,6 +110,19 @@
         margin-top: 0;
       }
 
+      #dvBevFooter {
+        color: #0D2F62;
+        font-size: 21px;
+        background-color: #fff;
+        padding:10px;
+        padding-left:20px;
+      }
+
+      #dvBevFooter a {
+        text-decoration: none;
+        color: #0D2F62;
+      }
+
       @media all and (max-width: 849px){
         .welcome {
           font-size: 60px;
@@ -118,6 +132,115 @@
           display: none;
         }
       }
+         /*==========  Non-Mobile First Method  ==========*/
+
+         /* Large Devices, Wide Screens
+         @media screen and (max-width : 1200px) {
+            body {background-color: red;}
+         }
+
+          Medium Devices, Desktops
+         @media screen and (max-width : 992px) {
+            body {background-color: orange;}
+         } */
+
+         /* Small Devices, Tablets */
+         @media screen and (max-width : 768px) {
+           /*body {background-color: yellow;}*/
+           .left {
+             padding-left: 40px;
+           }
+
+           .beverageBucks {
+             width: 100%;
+             text-align:center;
+           }
+
+           .bevBucksImage {
+             float: none;
+             display: inline-block;
+
+             border-right: none;
+             width: 411px;
+             margin-left: auto;
+             margin-right: auto;
+             padding-top: 15px;
+           }
+
+           .bevBucksImage img {
+             width: 100%;
+           }
+
+           .bevBucksText {
+             display:block;
+             padding: 15px;
+           }
+
+           .bevBucksTextHeader, .bevBucksText,
+           .bevBucksMainText {
+             text-align: justify;
+             width: calc(100% - 15px);
+             padding-bottom: 15px;
+           }
+
+           .right img {
+               display:none;
+           }
+         }
+
+         /* Extra Small Devices, Phones */
+         @media screen and (max-width : 480px) {
+            /*body {background-color: green;}*/
+            .left {
+              padding-left: 35px;
+            }
+
+            .beverageBucks {
+              width: 100%;
+            }
+
+            .bevBucksImage {
+              float: none;
+              display: inline-block;
+              width: 100%;
+              border-right: none;
+              margin:0;
+              padding:0;
+            }
+
+            .bevBucksImage img {
+              width: 100%;
+              margin:0;
+              margin-top:15px;
+            }
+
+            .bevBucksText {
+              display: block;
+              padding: 15px;
+            }
+
+            .bevBucksTextHeader, .bevBucksText,
+            .bevBucksMainText {
+              text-align: justify;
+              width: calc(100% - 15px);
+              padding-bottom: 15px;
+            }
+
+            .right img {
+                display:none;
+            }
+         }
+
+         /* Custom, iPhone Retina */
+         @media screen and (max-width : 320px) {
+            /*body {background-color: blue;}*/
+            .bevBucksText {
+              display:block;
+            }
+            .right img {
+              display:none;
+            }
+         }
     </style>
   </head>
   <body>
@@ -133,7 +256,7 @@
         delivered wherever you are, whenever you need them.
       </p>
       <p class="info">Our Beverage Experts are ready to answer any question you may <br/> have,
-      you can reach us at: info@beverageuniverse.com or call us at
+      you can reach us at: <a href="mailto://info@beverageuniverse.com">info@beverageuniverse.com</a> or call us at
       1-888-738-3003 between 7 AM and 5 PM EST weekdays.</p>
       <p class="promotion">
         25 Beverage Bucks have been added to your account. <br/> You can use them
@@ -165,6 +288,9 @@
           BEVERAGE BUCKS will expire 7 days after the registraton date.
         </div>
       </div>
+    </div>
+    <div id="dvBevFooter" style="clear:both;">
+        Find your beverages at <a id="lnkBevFooter" href="http://www.beverageuniverse.com" target="_blank">www.beverageuniverse.com</a>
     </div>
 
 
